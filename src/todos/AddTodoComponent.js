@@ -17,8 +17,9 @@ class AddTodoComponent extends React.Component {
     onChangeInput(e) {
         this.setState({
             inputValue: e.target.value
-        });
+        });        
     }
+
     onClickAddTodo() {
         console.log(this.state.inputValue);
         const newTodo = {
@@ -26,6 +27,9 @@ class AddTodoComponent extends React.Component {
             title: this.state.inputValue
         }
         this.props.addTodo(newTodo);
+        this.setState({
+            inputValue: ''
+        })
     }
 
     render() {

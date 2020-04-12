@@ -40,7 +40,7 @@ class TodoContentComponent extends React.Component {
     }
 
     render() {
-        console.log(this.state.todos);
+        
         return (
             <div className="todo-content">
                 <Grid container spacing={3}>

@@ -3,7 +3,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Typography from '@material-ui/core/Typography';
 import Avatar from '@material-ui/core/Avatar';
 import avatarImg from "../img/Avatar.jpg"
-import { makeStyles } from '@material-ui/core';
+
 
 
 

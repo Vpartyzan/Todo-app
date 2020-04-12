@@ -31,3 +31,18 @@ code {
   width: 100px !important;
   height: 100px !important;
 } 
+
+.Checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  padding: .5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: .5rem;
+  box-shadow: 0 2px 20px 0px grey;
+}
+
+.X {
+  color: red;
+}

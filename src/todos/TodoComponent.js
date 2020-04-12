@@ -18,11 +18,12 @@ class TodoComponent extends Component {
 
     render() {
         return (
-            <div>
+            <div className="Checkbox">
                 <Checkbox checked={this.props.status}
                           onChange={this.onChangeCheckbox}
                 />
                 {this.props.title}
+                <button className="X">&times;</button>
             </div>
         );
     }
