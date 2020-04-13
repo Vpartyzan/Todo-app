@@ -22,11 +22,14 @@ class AddTodoComponent extends React.Component {
 
     onClickAddTodo() {
         console.log(this.state.inputValue);
-        const newTodo = {
-            status: false,
-            title: this.state.inputValue
+        if (this.state.inputValue != ''){
+            const newTodo = {
+                status: false,
+                title: this.state.inputValue
+            }
+            this.props.addTodo(newTodo);
         }
-        this.props.addTodo(newTodo);
+        
         this.setState({
             inputValue: ''
         })

@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 
 import Checkbox from '@material-ui/core/Checkbox';
+import { IconButton } from '@material-ui/core';
+import DeleteIcon from '@material-ui/icons/Delete';
 
 class TodoComponent extends Component {
     constructor(props) {
@@ -21,9 +23,13 @@ class TodoComponent extends Component {
             <div className="Checkbox">
                 <Checkbox checked={this.props.status}
                           onChange={this.onChangeCheckbox}
+                          color='primary'
                 />
                 {this.props.title}
-                <button className="X">&times;</button>
+                
+                <IconButton aria-label='delete'>
+                    <DeleteIcon className='X' />
+                </IconButton>
             </div>
         );
     }
