@@ -32,18 +32,34 @@ code {
   height: 100px !important;
 } 
 
-.Checkbox {
+.checkbox {
   display: flex;
   justify-content: space-between;
   align-items: center;  
   padding: .5rem 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  margin-bottom: .5rem;
+  margin-bottom: .7rem;
   box-shadow: 0 2px 20px 0px grey;
+  background: white;
+  width: 75%;
 }
 
+.todo-list-container {
+  position: relative
+}
+
+.back-container {
+  position: absolute;
+  z-index: -1;
+  width: 76.7%;
+}
 
 .X {
   color: red;
+}
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.6;
 }

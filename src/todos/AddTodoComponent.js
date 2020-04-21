@@ -21,10 +21,10 @@ class AddTodoComponent extends React.Component {
     }
 
     onClickAddTodo() {
-        console.log(this.state.inputValue);
-        if (this.state.inputValue != ''){
+        if (this.state.inputValue !== ''){
             const newTodo = {
                 status: false,
+                description: '',
                 title: this.state.inputValue
             }
             this.props.addTodo(newTodo);

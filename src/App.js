@@ -1,14 +1,14 @@
 import React from 'react';
 
 import HeaderComponent from './header/HeaderComponent';
-import TodoContentComponent from './todos/TodoContentComponent';
+import NewTodoContentComponent from './todos/NewTodoContentComponent';
 
 
 function App() {
   return (
     <div className="App">
       <HeaderComponent />
-      <TodoContentComponent />
+      <NewTodoContentComponent />
     </div>
   );
 }
